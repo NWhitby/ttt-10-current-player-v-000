@@ -10,9 +10,8 @@ end
 
 def current_player(board)
   if turn_count(board).even?
-    player = "X"
-  else
-    player = "O"
-return player
-end
+    "X"
+  elsif turn_count(board).odd?
+    "O"
+  end
 end
